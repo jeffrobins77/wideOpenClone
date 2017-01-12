@@ -1,0 +1,90 @@
+.mainContainer{
+  max-width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+#headDiv{
+  background-color: silver;
+  height: 100px;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+#landingDiv{
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg) center top;
+  background-size: cover;
+  height: 400px;
+  right: 0;
+  left: 0;
+}
+#introDiv{
+  background: #F0F0F0;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+#introText{
+  color: #6A787C;
+  font-family: sans-serif;
+  font-size: 200%;
+  margin-left: 5%; margin-right: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+#businessDiv{
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+}
+.businessContainer{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+}
+#lightBulbDiv{
+  max-width: 300px;
+  margin: auto;
+  margin-top: 100px; margin-bottom: 5%;
+  text-align: center;
+  align-items: center;
+}
+#arrowDiv{
+  max-width: 300px;
+  margin: auto;
+  margin-top: 100px; margin-bottom: 5%;
+  text-align: center;
+  align-items: center;
+}
+#powerDiv{
+  max-width: 300px;
+  margin: auto;
+  margin-top: 100px; margin-bottom: 5%;
+  text-align: center;
+  align-items: center;
+}
+#helpDiv{
+  background: #F0F0F0;
+  height: auto;
+  color: #6A787C;
+  font-family: sans-serif;
+}
+#referrals{
+  background: gold;
+}
+#talkDiv{
+  background: #40666D;
+}
+#footDiv{
+  background: #F6F6F6;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
