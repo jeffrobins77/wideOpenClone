@@ -3,20 +3,51 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 #headDiv{
   background-color: silver;
   height: 100px;
   left: 0;
   right: 0;
-  position: fixed;
 }
 #landingDiv{
   background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg) center top;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   right: 0;
   left: 0;
+  color: white;
+}
+#landingText{
+  margin-left: 0;
+  width: 50%;
+  margin: auto;
+}
+#landingLines{
+  flex-direction: row;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+.whiteLine{
+  height: 10px;
+  width: 80px;
+  background-color: white;
+}
+#learnMore{
+  justify-content: center;
+  align-items: center;
+}
+#learnMoreText{
+  border-radius: 30px;
+  background: #C8E23A;
+  height: 50px;
+  width: 150px;
+  font-size: 100%;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
 }
 #introDiv{
   background: #F0F0F0;
@@ -70,15 +101,190 @@
   height: auto;
   color: #6A787C;
   font-family: sans-serif;
+  text-align: center;
+  justify-content: space-between;;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#boxesDiv{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 70%;
+}
+#repairBox{
+  background-color: white;
+  height: 100px;
+  width: 30%;
+  font-size: 150%;
+  margin-right:10px;
+  margin-left: 20%;
+}
+#developBox{
+  margin-top: 10px;
+  background-color: white;
+  height: 150px;
+  width: 30%;
+  margin-right:10px;
+  margin-left: 20%;
+}
+#buildBox{
+  margin-top: 10px;
+  background-color: white;
+  height: 150px;
+  width: 30%;
+  margin-right:10px;
+  margin-left: 20%;
+}
+#talentBox{
+  margin-top: 10px;
+  background-color: white;
+  height: 200px;
+  width: 30%;
+  margin-right: 15%;
+}
+#eCommerceBox{
+  margin-top: 10px;
+  background-color: white;
+  height: 150px;
+  width: 30%;
+  margin-right: 15%;
+}
+#contactUs{
+  border-radius: 30px;
+  background: #C8E23A;
+  height: 50px;
+  width: 200px;
+  font-size: 125%;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#referenceDiv{
+  text-align: center;
+  font-size: 150%;
+  font-family: sans-serif;
 }
 #referrals{
-  background: gold;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#mattress, #videoGuys, #CI, #kateFerguson, #NCMA, #taylorSays{
+  max-height: 50%;
+  min-height: 400px;
+  width: 500px;
+  min-width: 33%;
+}
+#mattress{
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/case-studies/AM-portfolio.png);
+  background-size: cover;
+}
+#videoGuys{
+  background: url(http://wideopentech.com/themes/wot-2013-gm/_/img/case-studies/VG-portfolio.png);
+  background-size: cover;
+}
+#CI{
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/case-studies/CI-portfolio.png);
+  background-size: cover;
+}
+#kateFerguson{
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/case-studies/KF-portfolio.png);
+  background-size: cover;
+}
+#NCMA{
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/case-studies/NCMA-portfolio.png);
+  background-size: cover;
+}
+#taylorSays{
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/case-studies/TS-portfolio.png);
+  background-size: cover;
 }
 #talkDiv{
   background: #40666D;
+  height: 250px;
+}
+#talkContainer{
+  width: 80%;
+  margin: auto;
+  font-size: 150%;
+  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+#talkDivWords{
+  width:80%;
+}
+#emailUs{
+  width: 20%;
+}
+#emailUsButton{
+  border-radius: 30px;
+  background: #C8E23A;
+  height: 50px;
+  width: 150px;
+  font-size: 100%;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+#locationsDiv{
+  flex-direction: row;
+}
+#wilmington{
+  background-image: url(http://www.wideopentech.com/themes/wot-2013-gm/_/img/wilmington.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+}
+#asheville{
+  background-image: url(http://www.wideopentech.com/themes/wot-2013-gm/_/img/asheville.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+}
+.address{
+  background: rgba(50, 61, 63, 0.9);
+  border-radius: 15px;
+  height: 120px;
+  width: 30%;
+  margin: auto;
 }
 #footDiv{
-  background: #F6F6F6;
+  height: 50px;
+  font-size: 80%;
+  vertical-align: middle;
+}
+#privacy{
+  width: 90%;
+  margin: auto;
+}
+#message{
+  position: fixed;
+  background-color: #BDD434;
+  border-radius: 5px;
+  flex-direction: row;
+  width: 150px;
+  height: 40px;
+  bottom: 2%;
+  right: 2.5%;
+}
+#chatPic{
+  width: 25px;
+  height: 25px;
+  margin-top: 8px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#messageText{
+  width:60%;
+  font-size: 85%;
+  color: white;
 }
 body{
   margin: 0;
